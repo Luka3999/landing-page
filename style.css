@@ -1,390 +1,44 @@
-@font-face {
-  font-family: "Monserrat";
-  src: url("font/Montserrat-Regular.otf") format("opentype"), url("font/Montserrat-Bold.ttf") format("truetype"), url("font/Montserrat-SemiBold.ttf") format("truetype"); }
-@font-face {
-  font-family: "OpenSans";
-  src: url("font/OpenSans-Light_2.ttf") format("truetype"), url("font/OpenSans-Regular_5.ttf") format("truetype"); }
-body {
-  background-color: white; }
+/*
+Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.
+        on line 50 of style.sass
 
-.special {
-  color: white;
-  text-align: center;
-  border: 4px white;
-  border-style: solid solid dotted solid;
-  background-color: red;
-  font-size: 13px;
-  padding: 4px;
-  margin-left: -12px;
-  margin-right: -12px;
-  margin-top: -12px;
-  font-family: "Monserrat"; }
+45: 
+46: }
+47: 
+48: 
+49: .box-position{
+50:   padding: 0rem 0rem
+51:   @media only screen and(min-width: $small){
+52:    padding: 0rem 22rem
+53:  }
+54: }
+55: 
 
-img {
-  width: 60px;
-  height: 60px;
-  margin-left: 39.7%; }
-  @media only screen and (min-width: 1107px) {
-    img {
-      width: 60px;
-      height: 60px;
-      margin-left: 47.7%; } }
-
-.box-position {
-  padding: 0rem 0rem; }
-  @media only screen and (min-width: 1107px) {
-    .box-position {
-      padding: 0rem 22rem; } }
-
-.box {
-  border: 4px white;
-  background-color: #eef6f9;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 6rem; }
-  @media only screen and (min-width: 1107px) {
-    .box {
-      height: 8rem; } }
-
-h1 {
-  color: #00b33c;
-  font-size: 22px;
-  text-align: center;
-  font-family: "Monserrat"; }
-  @media only screen and (min-width: 1107px) {
-    h1 {
-      color: #00b33c;
-      font-size: 28px;
-      text-align: center;
-      font-family: "Monserrat"; } }
-
-h2 {
-  color: black;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 0%;
-  font-family: "OpenSans"; }
-  @media only screen and (min-width: 1107px) {
-    h2 {
-      color: black;
-      font-size: 17px;
-      width: 42%;
-      text-align: center;
-      margin-left: 29%;
-      margin-top: 0%;
-      font-family: "OpenSans"; } }
-
-.spacing {
-  margin: -28.5rem; }
-  @media only screen and (min-width: 1107px) {
-    .spacing {
-      margin: -32.5rem; } }
-
-h3 {
-  margin: 0;
-  font-family: "Monserrat"; }
-
-.box1 {
-  border: 4px #ffdb4d;
-  border-radius: 0px;
-  background-color: #ffdb4d;
-  padding: 0.1rem;
-  width: 100%;
-  height: 59px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -2%; }
-  @media only screen and (min-width: 1107px) {
-    .box1 {
-      width: 515px;
-      border-radius: 30px; } }
-
-#triangle-left {
-  width: 0px;
-  height: 0;
-  border-top: 0px solid transparent;
-  border-right: 0px solid #ffdb4d;
-  border-bottom: 0px solid transparent; }
-  @media only screen and (min-width: 1107px) {
-    #triangle-left {
-      width: 0px;
-      height: 0;
-      border-top: 25px solid transparent;
-      border-right: 50px solid #ffdb4d;
-      border-bottom: 25px solid transparent; } }
-
-#triangle-right {
-  width: 0;
-  height: 0;
-  border-top: 0px solid transparent;
-  border-left: 0px solid #ffdb4d;
-  border-bottom: 0px solid transparent; }
-  @media only screen and (min-width: 1107px) {
-    #triangle-right {
-      width: 0px;
-      height: 0;
-      border-top: 25px solid transparent;
-      border-left: 50px solid #ffdb4d;
-      border-bottom: 25px solid transparent; } }
-
-.material-icons.md-36 {
-  color: red;
-  float: left;
-  font-size: 33px; }
-
-h3 {
-  font-size: 10px;
-  padding: 0rem;
-  text-align: center; }
-  @media only screen and (min-width: 1107px) {
-    h3 {
-      font-size: 15px; } }
-
-h4 {
-  font-size: 13px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: "Monserrat";
-  color: #191970; }
-  @media only screen and (min-width: 1107px) {
-    h4 {
-      font-size: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1%;
-      text-align: center;
-      font-family: "Monserrat";
-      color: #191970; } }
-
-.box2 {
-  background-color: #990000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 35px auto;
-  flex: 50%;
-  flex-wrap: wrap; }
-
-.image1 {
-  width: 350px;
-  height: 300px;
-  background-image: url("3-pack.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  margin: 2px 30px; }
-
-.packets {
-  font-size: 30px;
-  text-align: center;
-  color: #ffdb4d;
-  border-bottom: 1px solid black;
-  justify-content: space-between;
-  margin: 25px 6px;
-  font-family: "Monserrat"; }
-
-.regular {
-  font-size: 25px;
-  color: #ffffff;
-  flex: 28%;
-  margin: 0.5em;
-  text-align: center;
-  font-family: "OpenSans"; }
-
-.price {
-  font-size: 40px;
-  text-align: center;
-  color: #ffdb4d;
-  flex: auto;
-  font-family: "Monserrat"; }
-
-.text {
-  flex-direction: column;
-  font-family: "OpenSans"; }
-
-.box3 {
-  border: 4px #ffdb4d;
-  border-radius: 14px;
-  background-color: #ffdb4d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 17.8rem; }
-
-#triangle-left1 {
-  width: 37px;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-right: 35px solid #990000;
-  border-bottom: 25px solid transparent; }
-
-.text-box3 {
-  font-size: 16px;
-  width: 653px; }
-
-#triangle-right1 {
-  width: 38px;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-left: 35px solid  #990000;
-  border-bottom: 25px solid transparent; }
-
-.button {
-  background-color: #4CAF50;
-  border: 2px black;
-  color: white;
-  padding: 15px 80px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 2px;
-  cursor: pointer;
-  width: 17.8rem;
-  font-family: "Monserrat";
-  box-shadow: 2px 2px black; }
-
-.button:hover {
-  background-color: #3d8a3f; }
-
-.border {
-  border-radius: 0%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin-left: 85px;
-  margin-top: -15rem; }
-  @media only screen and (min-width: 1107px) {
-    .border {
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-      width: 85px;
-      height: 85px;
-      margin-top: -1rem;
-      margin-left: 2rem;
-      background: #990000; } }
-
-.image2 {
-  width: 75px;
-  height: 80px;
-  background-image: url(money-back1.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  z-index: 20; }
-  @media only screen and (min-width: 1107px) {
-    .image2 {
-      width: 75px;
-      height: 80px;
-      background-image: url(money-back1.png);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: contain;
-      z-index: 20; } }
-
-.image3 {
-  width: 350px;
-  height: 300px;
-  background-image: url("6-pack.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  margin: 2px 30px; }
-
-.material-icons.md-16 {
-  color: #808080;
-  font-size: 14px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.thanks {
-  font-size: 10px;
-  color: #808080;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  font-family: "Monserrat"; }
-
-.footer1 {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "OpenSans";
-  font-size: 10px; }
-  @media only screen and (min-width: 1107px) {
-    .footer1 {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "OpenSans";
-      font-size: 14px; } }
-
-.footer2 {
-  font-size: 11px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "OpenSans"; }
-  @media only screen and (min-width: 1107px) {
-    .footer2 {
-      font-size: 13px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "OpenSans"; } }
-
-a {
-  color: #0000ff; }
-
-.footer3 {
-  font-size: 9px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 1.7%;
-  font-family: "OpenSans"; }
-  @media only screen and (min-width: 1107px) {
-    .footer3 {
-      font-size: 13px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 1.7%;
-      font-family: "OpenSans"; } }
-
-.footer4 {
-  font-size: 11px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "OpenSans"; }
-  @media only screen and (min-width: 1107px) {
-    .footer4 {
-      font-size: 12px;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "OpenSans";
-      padding: 10px 0px; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.sass:50
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:494:in `block in tabulate'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `each_with_index'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:452:in `tabulate'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:417:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Library/Ruby/Gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 4 spaces.\A         on line 50 of style.sass\A \A 45: \A 46: }\A 47: \A 48: \A 49: .box-position{\A 50:   padding: 0rem 0rem\A 51:   @media only screen and(min-width: $small){\A 52:    padding: 0rem 22rem\A 53:  }\A 54: }\A 55: "; }

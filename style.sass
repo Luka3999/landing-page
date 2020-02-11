@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "Monserrat"
+    src: url("font/Montserrat-Regular.otf") format('opentype'),
+        url("font/Montserrat-Bold.ttf") format('truetype'),
+        url("font/Montserrat-SemiBold.ttf") format('truetype')
+    }
+
+    @font-face {
+        font-family: "OpenSans"
+        src: url("font/OpenSans-Light_2.ttf") format('truetype'),
+            url("font/OpenSans-Regular_5.ttf") format('truetype')
+        }
+
+$pf: "Monserrat"
+$sf: "OpenSans"
+$small:1107px
+
+body{
+    background-color:white
+}
+
+.special {
+        color:white
+        text-align: center
+        border:4px white
+        border-style:solid solid dotted solid
+        background-color:red
+        font-size: 13px
+        padding: 4px
+        margin-left: -12px
+        margin-right: -12px
+        margin-top:-12px
+        font-family: $pf
+}
+
+img {
+    width: 60px
+    height: 60px
+    margin-left: 39.7%
+    @media only screen and(min-width: $small) {
+    width: 60px
+    height: 60px
+    margin-left: 47.7%
+    }
+
+}
+
+
+.box-position{
+  padding: 0rem 0rem
+  @media only screen and(min-width: $small){
+   padding: 0rem 22rem
+ }
+}
+
+.box {
+    border:4px white
+    background-color: #eef6f9
+    margin: auto
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 6rem
+    @media only screen and(min-width: $small){
+    height: 8rem
+    }
+}
+
+h1{
+    color:#00b33c
+    font-size: 22px
+    text-align: center
+    font-family: $pf
+    @media only screen and(min-width: $small){
+    color:#00b33c
+    font-size: 28px
+    text-align: center
+    font-family: $pf
+    }
+}
+
+h2 {
+    color: black
+    font-size: 12px
+    text-align: center
+    margin-top: 0%
+    font-family: $sf
+    @media only screen and(min-width: $small){
+        color: black
+        font-size: 17px
+        width: 42%
+        text-align: center
+        margin-left: 29%
+        margin-top: 0%
+        font-family: $sf
+    }
+
+}
+
+.spacing {
+    margin: -28.5rem
+    @media only screen and(min-width: $small) {
+        margin: -32.5rem
+    }
+}
+h3{
+    margin: 0
+    font-family: $pf
+}
+.box1 {
+    border: 4px #ffdb4d
+    border-radius: 0px
+    background-color: #ffdb4d
+    padding: 0.1rem
+    width: 100%
+    height: 59px
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: -2%
+    @media only screen and(min-width: $small) {
+        width: 515px
+        border-radius: 30px
+    }
+}
+
+
+#triangle-left {
+    width: 0px
+    height: 0
+    border-top: 0px solid transparent
+    border-right: 0px solid #ffdb4d
+    border-bottom: 0px solid transparent
+    @media only screen and(min-width: $small){
+    width: 0px
+    height: 0
+    border-top: 25px solid transparent
+    border-right: 50px solid #ffdb4d
+    border-bottom: 25px solid transparent
+
+    }
+  }
+
+  #triangle-right {
+    width:
+    height: 0
+    border-top: 0px solid transparent
+    border-left: 0px solid #ffdb4d
+    border-bottom: 0px solid transparent
+    @media only screen and(min-width: $small){
+    width: 0px
+    height: 0
+    border-top: 25px solid transparent
+    border-left: 50px solid #ffdb4d
+    border-bottom: 25px solid transparent
+
+    }
+  }
+
+
+.material-icons.md-36{
+    color: red
+    float: left
+    font-size: 33px
+}
+
+h3 {
+    font-size: 10px
+    padding: 0rem
+    text-align: center
+    @media only screen and(min-width: $small) {
+        font-size: 15px
+    }
+}
+
+h4 {
+    font-size: 13px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-family: $pf
+    color: 	#191970
+    @media only screen and(min-width: $small){
+        font-size: 15px
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 1%
+        text-align: center
+        font-family: $pf
+        color: 	#191970
+    }
+}
+
+.box2 {
+    background-color: #990000
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100%
+    margin:35px auto
+    flex: 50%
+    flex-wrap: wrap
+    @media only screen and(min-width: $small){
+
+    }
+
+
+}
+
+.image1 {
+    width: 350px
+    height: 300px
+    background-image: url("3-pack.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: auto
+    margin: 2px 30px
+}
+
+.packets {
+    font-size: 30px
+    text-align: center
+    color: #ffdb4d
+    border-bottom: 1px solid black
+    justify-content: space-between
+    margin: 25px 6px
+    font-family: $pf
+
+}
+
+.regular {
+    font-size: 25px
+    color: #ffffff
+    flex: 28%
+    margin: 0.5em
+    text-align: center
+    font-family: $sf
+
+}
+
+.price {
+    font-size: 40px
+    text-align: center
+    color:#ffdb4d
+    flex: auto
+    font-family: $pf
+}
+
+.text{
+   flex-direction: column
+   font-family: $sf
+}
+
+.box3{
+    border: 4px #ffdb4d
+    border-radius: 14px
+    background-color: #ffdb4d
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 17.8rem
+}
+
+#triangle-left1 {
+    width: 37px
+    height: 0
+    border-top: 25px solid transparent
+    border-right: 35px solid #990000
+    border-bottom: 25px solid transparent
+  }
+
+  .text-box3{
+    font-size: 16px
+    width: 653px
+  }
+
+#triangle-right1 {
+    width: 38px
+    height: 0
+    border-top: 25px solid transparent
+    border-left: 35px solid  #990000
+    border-bottom: 25px solid transparent
+
+  }
+
+.button {
+    background-color: #4CAF50
+    border: 2px black
+    color: white
+    padding: 15px 80px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: 16px
+    margin: 10px 2px
+    cursor: pointer
+    width: 17.8rem
+    font-family: $pf
+    box-shadow: 2px 2px black
+  }
+
+.button:hover{
+  background-color: #3d8a3f
+}
+
+.border{
+
+    border-radius: 0%
+    display: flex
+    justify-content: center
+    position: absolute
+    margin-left: 85px
+    margin-top: -15rem
+    @media only screen and(min-width: $small){
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    position: absolute
+    width: 85px
+    height: 85px
+    margin-top: -1rem
+    margin-left: 2rem
+    background: #990000
+    }
+}
+
+.image2 {
+    width: 75px
+    height: 80px
+    background-image: url(money-back1.png)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
+    z-index: 20
+    @media only screen and(min-width: $small) {
+    width: 75px
+    height: 80px
+    background-image: url(money-back1.png)
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
+    z-index: 20
+    }
+}
+
+
+.image3 {
+    width: 350px
+    height: 300px
+    background-image: url("6-pack.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: auto
+    margin: 2px 30px
+
+}
+
+.material-icons.md-16{
+    color: #808080
+    font-size: 14px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+}
+
+.thanks {
+    font-size: 10px
+    color: #808080
+    text-align: center
+    display: flex
+    justify-content: center
+    font-family: $pf
+}
+
+.footer1{
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+    font-size: 10px
+    @media only screen and(min-width: $small) {
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+    font-size: 14px
+    }
+}
+
+.footer2 {
+    font-size: 11px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+    @media only screen and(min-width: $small) {
+    font-size: 13px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+
+    }
+
+}
+
+a {
+    color: #0000ff
+}
+
+.footer3 {
+    font-size: 9px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1.7%
+    font-family: $sf
+    @media only screen and(min-width: $small){
+    font-size: 13px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1.7%
+    font-family: $sf
+
+    }
+}
+
+.footer4 {
+    font-size: 11px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+    @media only screen and(min-width: $small) {
+    font-size: 12px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: $sf
+    padding: 10px 0px
+
+    }
+
+}
